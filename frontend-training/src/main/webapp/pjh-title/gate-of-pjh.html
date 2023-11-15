@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게이트 | 내소개</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<style type="text/css">
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.menu-bar {
+	width: 100%;
+	height: 50px;
+	color: black;
+	position: fixed;
+	text-align: right;
+}
+
+.menu-bar a {
+	margin-right: 1em;
+	padding: 12px;
+	font-size: 18px;
+	display: inline-block;
+}
+
+.menu-bar a:hover { /*마우스 가져다 댈때*/
+	background-color: #777;
+}
+
+.menu-bar a:active {
+	background-color: gray;
+}
+
+body {
+	background-color: black;
+}
+
+.image-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.image-text {
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-attachment: local;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.first-image-head {
+	font-size: 65px;
+}
+
+@font-face {
+	font-family: 'NanumMyeongjo-Bold'; /*폰트의 이름 지정(임의로 지정 해도 됨)*/
+	src: url('NanumMyeongjo-Bold.ttf') format('truetype');
+}
+
+p {
+	font-family: 'NanumMyeongjo-Bold';
+	color: white;
+}
+
+p.first-head {
+	font-size: 65px;
+	margin-left: 3em;
+	margin-top: 2em;
+}
+
+p.first-bottom {
+	font-size: 25px;
+	text-align: right;
+	margin-top: 20em;
+	margin-right: 3em;
+}
+
+p.second-head {
+	font-size: 80px;
+	text-align: center;
+	margin-top: 3em;
+}
+
+p.third-head {
+	font-size: 65px;
+	margin-left: 3em;
+	margin-top: 2em;
+}
+
+p.third-bottom {
+	font-size: 35px;
+	margin-top: 14em;
+	margin-right: 2em;
+	text-align: right;
+}
+</style>
+</head>
+<body>
+	<div class="menu-bar">
+		<a href="#">Home</a> <a href="#">소개</a> <a href="#">이력</a> <a href="#">포트폴리오</a>
+
+	</div>
+
+	<div class="image-container">
+		<div class="image-text" style="background-image: url('BlackSky.jpg')">
+			<p class="first-head">Front-End Beginner</p>
+			<p class="first-bottom">From 쌍용 교육센터</p>
+		</div>
+
+
+
+		<div class="image-text" style="background-image: url('moon.jpg')">
+			<p class="second-head">"Front End의 70%는 이렇게 한다"</p>
+
+		</div>
+
+
+
+		<div class="image-text" style="background-image: url('citysky.jpg')">
+			<p class="third-head">Journey To be a Developer</p>
+			<p class="third-bottom">We are waiting your decision</p>
+		</div>
+
+	</div>
+
+</body>
+</html>
