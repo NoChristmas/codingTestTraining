@@ -7,13 +7,9 @@ import java.util.StringTokenizer;
 import java.util.LinkedList;
 import java.util.Queue;
 
-
-
-
 public class number1926 {
     public static class Pair {
         int x, y;
-        
         public Pair(int x, int y){
             this.x = x;
             this.y = y;
@@ -31,7 +27,6 @@ public class number1926 {
         public void setY(int y){
             this.y = y;
         }
-        
     }
 
     static int n,m;
@@ -40,8 +35,6 @@ public class number1926 {
     static int[] dx;
     static int[] dy;
     static Queue<Pair> qu;
-
-
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());        
@@ -57,7 +50,7 @@ public class number1926 {
         dy = new int[]{0,1,0,-1};
 
         
-        for(int i=0; i<n; i++){
+        for(int i=0; i<n; i++) {
             st = new StringTokenizer(br.readLine());
             for(int j=0; j<m; j++){
                 arr[i][j] = Integer.parseInt(st.nextToken());
