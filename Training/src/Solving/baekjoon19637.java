@@ -18,7 +18,7 @@ public class baekjoon19637 {
             title[i] = st.nextToken();
             score[i] = Integer.parseInt(st.nextToken());
         }
-
+        //이진탐색 부분
         for(int i = 0; i<M; i++) {
             int num = Integer.parseInt(br.readLine());
             int start = 0;
