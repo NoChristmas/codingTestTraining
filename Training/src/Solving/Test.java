@@ -3,20 +3,13 @@ package Solving;
 import java.util.*;
 import java.io.*;
 
-
 public class Test {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
+    public static void main(String[] args) {
         
-        int N = br.read();
-        int[] arr = new int[N];
-        
-        for(int i =1; i < N; i++) {
-            arr[i] = 1;
-            int parent = Integer.parseInt(st.nextToken());
-            int child = Integer.parseInt(st.nextToken());
-            
+        for(int i = 2; i<=10; i++) {
+            for(int j = i+i; j<=10; j = j+i) {
+                System.out.println("i : "+i+", j : "+ j);
+            }
         }
     }
 }
