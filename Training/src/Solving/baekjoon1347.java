@@ -22,12 +22,12 @@ public class baekjoon1347 {
         arr[50][50] = ".";
         for(String str : temp) {
             switch(str) {
-                case("R") : {
-                    cnt = (cnt+1)%4;
+                case("R") : { //4번
+                    cnt = (cnt+1)%4; //%4 3, 7 번 돌면 같음
                     break;
                 }
-                case("L") : {
-                    cnt = (cnt-1)%4;
+                case("L") : { //4번
+                    cnt = (cnt-1)%4; //%4 1번 5번 
                     break;
                 }
                 case("F") : {
@@ -52,7 +52,6 @@ public class baekjoon1347 {
         int minY = 101;
         int maxX = 0;
         int minX = 101;
-
         for(int i = 0; i<=100; i++) {
             for(int j = 0; j<=100; j++) {
                 if(arr[i][j].equals(".")) {
@@ -64,7 +63,6 @@ public class baekjoon1347 {
             }
             
         }
-        
         for(int i = minY; i<=maxY; i++) {
             for(int j = minX; j<=maxX; j++) {
                 System.out.print(arr[i][j]);
